@@ -30,6 +30,8 @@ class AmazonScraperItem(scrapy.Item):
     bestsellers_rank_flat = scrapy.Field()
     manufacturer = scrapy.Field()
     first_available = scrapy.Field()
+    categories = scrapy.Field()
+    variations = scrapy.Field()
 
 class QuoteItem(scrapy.Item):
     title = scrapy.Field()
