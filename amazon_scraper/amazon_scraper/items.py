@@ -33,6 +33,7 @@ class AmazonScraperItem(scrapy.Item):
     categories = scrapy.Field()
     variations = scrapy.Field()
 
-class QuoteItem(scrapy.Item):
-    title = scrapy.Field()
-    author = scrapy.Field()
+class AmazonDepartmentItem(scrapy.Item):
+    category = scrapy.Field()
+    category_code = scrapy.Field()
+    category_parent_code = scrapy.Field()
